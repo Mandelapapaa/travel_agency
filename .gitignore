@@ -26,12 +26,16 @@ composer.phar
 
 # phpunit itself is not needed
 phpunit.phar
+
 # local phpunit config
 /phpunit.xml
 
+# test output files
 tests/_output/*
 tests/_support/_generated
 
-#vagrant folder
+# vagrant folder
 /.vagrant
-/config/db.phpss
+
+# protect database configuration
+/config/db.php
